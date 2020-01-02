@@ -10,11 +10,15 @@ import UIKit
 
 class VideoListViewController: UIViewController {
     
+    @IBOutlet weak var hamidTableView: UITableView!
     var videos :[Video] = []
-    
+    var selectedVideo:Video?
     override func viewDidLoad() {
         super.viewDidLoad()
         videos = createArray()
+        hamidTableView.delegate = self
+        hamidTableView.dataSource = self
+        
     }
    
     func createArray() -> [Video] {
@@ -42,9 +46,25 @@ extension VideoListViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let video = videos [indexPath.row]
+       // selectedVideoint = indexPath.row
         let cell = tableView.dequeueReusableCell(withIdentifier: "Videocell") as! Videocell
         cell.setVideo(video: video)
         return cell
     }
+    //func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        //print(videos[indexPath.row].title)
     
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    selectedVideo = videos[indexPath.row]
+    performSegue(withIdentifier: "PassData", sender: self)
+}
+
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PassData" {
+            if let nextViewController =  segue.destination as? PassDataViewController {
+                nextViewController.selectedVideo = selectedVideo
+            }
+        }
+    }
 }

@@ -16,6 +16,7 @@
 		85956BCA23BC9FBD000361BF /* VideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85956BC923BC9FBD000361BF /* VideoListViewController.swift */; };
 		85956BCD23BCAC35000361BF /* Videocell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85956BCC23BCAC35000361BF /* Videocell.swift */; };
 		85956BCF23BCB296000361BF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85956BCE23BCB296000361BF /* Video.swift */; };
+		85CFBE9423BE0E3F00326FE4 /* PassDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CFBE9323BE0E3F00326FE4 /* PassDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		85956BC923BC9FBD000361BF /* VideoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListViewController.swift; sourceTree = "<group>"; };
 		85956BCC23BCAC35000361BF /* Videocell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Videocell.swift; sourceTree = "<group>"; };
 		85956BCE23BCB296000361BF /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		85CFBE9323BE0E3F00326FE4 /* PassDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				85956BC923BC9FBD000361BF /* VideoListViewController.swift */,
 				85956BCC23BCAC35000361BF /* Videocell.swift */,
 				85956BCE23BCB296000361BF /* Video.swift */,
+				85CFBE9323BE0E3F00326FE4 /* PassDataViewController.swift */,
 				85956B9C23BC9F5F000361BF /* Main.storyboard */,
 				85956BA223BC9F68000361BF /* Assets.xcassets */,
 				85956BA423BC9F68000361BF /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				85956BA123BC9F5F000361BF /* TableView.xcdatamodeld in Sources */,
 				85956BCD23BCAC35000361BF /* Videocell.swift in Sources */,
 				85956BCA23BC9FBD000361BF /* VideoListViewController.swift in Sources */,
+				85CFBE9423BE0E3F00326FE4 /* PassDataViewController.swift in Sources */,
 				85956B9923BC9F5F000361BF /* AppDelegate.swift in Sources */,
 				85956BCF23BCB296000361BF /* Video.swift in Sources */,
 			);
