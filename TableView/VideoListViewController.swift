@@ -26,6 +26,7 @@ class VideoListViewController: UIViewController {
         let Video5 = Video(image: UIImage(named: "D")!, title: "Fifth Apple")
         
         tempVideos.append(Video1)
+        //tempVideos.append(Video2)
         tempVideos.append(Video2)
         tempVideos.append(Video3)
         tempVideos.append(Video4)
